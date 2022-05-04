@@ -21,6 +21,7 @@ exports.userDeleted = functions.auth.user().onDelete((user) => {
   return doc.delete();
 });
 
+
 exports.updatePlayerColor = functions.https.onCall((data, context) => {
   const index = data.index;
   const color = data.color;
